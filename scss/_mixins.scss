@@ -1,0 +1,24 @@
+// Mixins
+// ------------------------------------------------------------
+
+// Media queries
+
+@mixin breakpoint($point) {
+	@if $point == 480px {
+		@media (min-width: 30em) { @content; }
+	}
+	@else if $point == 768px {
+		@media (min-width: 48em) { @content; }
+	}
+	@else if $point == 1024px {
+		@media (min-width: 60em)  { @content; }
+	}
+	@else if $point == 1280px {
+		@media (min-width: 80em)  { @content; }
+	}
+}
+
+// @include breakpoint(480px)  {}
+// @include breakpoint(768px)  {}
+// @include breakpoint(1024px) {}
+// @include breakpoint(1280px) {}
