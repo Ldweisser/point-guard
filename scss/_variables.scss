@@ -24,10 +24,18 @@ $selection-color      :     #FF69B4;
 
 $unit                 :     1em;
 
-$container-width      :     90%; // Currently not using this variable
 $container-max-width  :     68.75em; // 68.75em = 1000px / 75em = 1200px
 
 
 // Dev Mode
 
 $dev-mode             :     false;
+
+
+
+// Silent classes
+// ------------------------------------------------------------
+
+%full-bleed {
+	padding: 0;
+}

@@ -1,14 +1,3 @@
-// Silent classes
-// ------------------------------------------------------------
-
-%full-bleed {
-	padding: 0;
-}
-
-
-// Baseline
-// ------------------------------------------------------------
-
 html { 
 	font-size: 87.5%;
 	@include breakpoint(768px) { font-size: 100% }
@@ -20,9 +9,16 @@ body {
 	color: $light-black;
 }
 
+.container {
+	@include outer-container;
+	max-width: $container-max-width;
+	padding: 0 $unit*1.5;
+	@include transition (.3s);
 
-// Type
-// ------------------------------------------------------------
+	@include media($container-max-width+$unit*4) {
+		padding: 0;
+	}
+}
 
 h1, .h1 {
 	font-size: golden-ratio(16px, 2);
@@ -35,35 +31,6 @@ h2, .h2 {
 	line-height: 1.3;
 	margin: $unit 0 $unit/2;
 }
-
-
-// Navigation
-// ------------------------------------------------------------
-
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-}
-
-
-// Grid
-// ------------------------------------------------------------
-
-.container {
-	@include outer-container;
-	// width: $container-width;
-	max-width: $container-max-width;
-	padding: 0 $unit*1.5;
-	@include transition (.3s);
-
-	@include media($container-max-width+$unit*4) {
-		padding: 0;
-	}
-}
-
 
 // Demo
 // ------------------------------------------------------------
