@@ -4,8 +4,13 @@ A boilerplate for [Sass](http://sass-lang.com/) and JavaScript using [Guard](htt
 
 - - - 
 
-### Commands
+### Prerequisites
 
+1. Install [pow](http://pow.cx) for serving files at [project-name].dev
+2. Install [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+
+
+### Commands
 
 1. `cd` into project directory
 2. `bundle install` installs required gems
@@ -15,8 +20,3 @@ A boilerplate for [Sass](http://sass-lang.com/) and JavaScript using [Guard](htt
 6. `cd ..` go back to project directory
 7. `powder link` serve you project at [project-name].dev
 8. `guard` start guard to watch file changes
-
-### More
-
-1. Install [pow](http://pow.cx) for serving files at [project-name].dev
-2. Install [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
