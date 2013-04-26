@@ -10,9 +10,20 @@ A boilerplate for [Sass](http://sass-lang.com/) and JavaScript using [Guard](htt
 
 ### Setup
 
-1. `git clone https://github.com/joshfry/point-guard.git` - Clone the repo
-2. `mv point-guard myapp` - Rename the project, for example, "myapp"
-3. `cd myapp` - cd into "myapp"
-4. `bundle install ; cd scss ; bourbon install ; neat install ; cd .. ; powder link ; guard` - Downloads required gems, installs Bourbon & Bourbon Neat in the scss directory, creates a localhost with project name (myapp.dev), compiles sass, concats js and live reloads the browser when changes are made to any file.
+Clone the repo
+
+    git clone https://github.com/joshfry/point-guard.git
+
+Rename the project, for example, "myapp"
+
+    mv point-guard myapp
+
+cd into "myapp"
+
+    cd myapp
+
+Download required gems, install Bourbon & Bourbon Neat in the scss directory, create a localhost with project name (myapp.dev), compile sass, concat js and livereload the browser when changes are made to any file.
+
+    bundle install ; cd scss ; bourbon install ; neat install ; cd .. ; powder link ; guard
 
 Just make sure you have the Livereload browser extension installed and you have clicked the icon to enable it.
