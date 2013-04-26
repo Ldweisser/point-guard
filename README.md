@@ -6,8 +6,7 @@ A boilerplate for [Sass](http://sass-lang.com/) and JavaScript using [Guard](htt
 
 ### Prerequisites
 
-1. Install [pow](http://pow.cx) for serving files at [project-name].dev
-2. Install [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+[Ruby](http://www.ruby-lang.org), [rvm](https://rvm.io), [pow](http://pow.cx), [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
 ### Directions
 
