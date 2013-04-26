@@ -9,14 +9,20 @@ A boilerplate for [Sass](http://sass-lang.com/) and JavaScript using [Guard](htt
 1. Install [pow](http://pow.cx) for serving files at [project-name].dev
 2. Install [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
+### Directions
 
-### Commands
+Clone this repo
 
-1. `cd` into project directory
-2. `bundle install` installs required gems
-3. `cd` into scss directory
-4. `bourbon install` use the bourbon mixin library
-5. `neat install` use bourbon neat - semantic grid system
-6. `cd ..` go back to project directory
-7. `powder link` serve you project at [project-name].dev
-8. `guard` start guard to watch file changes
+`git clone https://github.com/joshfry/point-guard.git`
+
+Rename folder with project name
+
+`mv point-guard myapp`
+
+cd into project
+
+`cd myapp`
+
+Download required gems, install Bourbon & Neat, create a localhost with app name (myapp.dev), compile sass, concat js and live reload the browser when changes are made to any file.
+
+`bundle install ; cd scss ; bourbon install ; neat install ; cd .. ; powder link ; guard`
