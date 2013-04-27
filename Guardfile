@@ -2,12 +2,10 @@
 # More info at https://github.com/guard/guard#readme
 
 # guard-concat
+# Add bower components here. Do not add .js at the end of the file.
 guard :concat, type: "js", 
   files: %w(
     libs/jquery-1.9.1.min
-    plugins/jquery-plugin-1 
-    plugins/jquery-plugin-2 
-    plugins/jquery-plugin-3 
     app
   ), 
   input_dir: "js", 

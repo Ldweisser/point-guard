@@ -1,1 +1,0 @@
-console.log("jquery-plugin-3.js");
