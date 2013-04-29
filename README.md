@@ -26,7 +26,7 @@ cd into "myapp"
 
     cd myapp
 
-Download required gems, install Bourbon & Bourbon Neat in the scss directory, create a localhost with project name (myapp.dev), compile sass, concat js and livereload the browser when changes are made to any file.
+Download required gems, install Bourbon & Bourbon Neat in the scss directory, install dependancies create a localhost with project name (myapp.dev), compile sass, concat js and livereload the browser when changes are made to any file.
 
     bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && guard
 
@@ -37,10 +37,6 @@ Just make sure you have the Livereload browser extension installed and you have 
 ##### Just copy and paste this into your shell
 
 	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && open http://$NAME.dev && guard
-
-## Testing another setup
-
-	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && subl . && open . && open http://$NAME.dev && guard
 
 ## Bower
 
@@ -57,3 +53,8 @@ To uninstall a package
 ## Guard Concat
 
 Edit `Guardfile` to add the js files you want to concat and in which order.
+
+
+## Testing another setup.. don't use
+
+	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && subl . && open . && open http://$NAME.dev && guard
