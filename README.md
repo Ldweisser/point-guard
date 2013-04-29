@@ -28,7 +28,7 @@ cd into "myapp"
 
 Download required gems, install Bourbon & Bourbon Neat in the scss directory, create a localhost with project name (myapp.dev), compile sass, concat js and livereload the browser when changes are made to any file.
 
-    bundle install && cd scss && bourbon install && neat install && cd .. && powder link && guard
+    bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && guard
 
 Just make sure you have the Livereload browser extension installed and you have clicked the icon to enable it.
 
@@ -36,19 +36,23 @@ Just make sure you have the Livereload browser extension installed and you have 
 
 ##### Just copy and paste this into your shell
 
-	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && powder link && open http://$NAME.dev && guard
+	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && open http://$NAME.dev && guard
 
 ## Testing another setup
 
-	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && powder link && subl . && open . && open http://$NAME.dev && guard
+	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && subl . && open . && open http://$NAME.dev && guard
 
 ## Bower
 
 Bower packages are pulled into the `/js/components/` directory using the `.bowerrc` file.
 
-#### To add a package
+To add a new package
 
-	bower install {{name of package}} or {{github repo url}}
+	bower install <name-of-package> --save
+
+To uninstall a package
+
+	bower uninstall <name-of-package> --save
 
 ## Guard Concat
 
