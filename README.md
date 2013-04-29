@@ -38,9 +38,7 @@ Just make sure you have the Livereload browser extension installed and you have 
 
 	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && powder link && open http://$NAME.dev && guard
 
-## My setup using a .bash_profile alias
-
-The only difference is that I'm using the `subl` command to launch the project in Sublime
+## Testing another setup
 
 	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && powder link && subl . && open . && open http://$NAME.dev && guard
 
