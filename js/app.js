@@ -1,1 +1,1 @@
-console.log("app.js");
+alert ("jQuery_has_landed");

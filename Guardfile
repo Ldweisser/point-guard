@@ -7,7 +7,6 @@
     # Adding the --save flag, saves the plugin as a dependancy in compenent.json
 guard :concat, type: "js", 
   files: %w(
-    components/jquery/jquery.min
     app
   ), 
   input_dir: "js", 
