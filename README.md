@@ -2,7 +2,7 @@
 
 A boilerplate for Sass and JavaScript.
 
-**What you'll need**: [Ruby](http://www.ruby-lang.org), [rvm](https://rvm.io), [node](http://nodejs.org), [npm](https://npmjs.org), [Sass](http://sass-lang.com/), [Bourbon](http://bourbon.io), [Bourbon Neat](http://neat.bourbon.io), [Guard](https://github.com/guard/guard), [Bower](http://bower.io), [pow](http://pow.cx), [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+**What you'll need**: [Ruby](http://www.ruby-lang.org), [Gem bundler](http://gembundler.com/), [rvm](https://rvm.io), [node](http://nodejs.org), [npm](https://npmjs.org), [Sass](http://sass-lang.com/), [Bourbon](http://bourbon.io), [Bourbon Neat](http://neat.bourbon.io), [Guard](https://github.com/guard/guard), [Bower](http://bower.io), [pow](http://pow.cx), [livereload browser extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
 - - - 
 
