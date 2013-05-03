@@ -26,29 +26,55 @@ cd into "myapp"
 
     cd myapp
 
-Download required gems, install Bourbon & Bourbon Neat in the scss directory, install dependancies create a localhost with project name (myapp.dev), compile sass, concat js and livereload the browser when changes are made to any file.
+Download required gems
 
-    bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && guard
+    bundle install
 
-Just make sure you have the Livereload browser extension installed and you have clicked the icon to enable it.
+cd into scss directory
+    
+    cd scss
+    
+install Bourbon
+    
+    bourbon install
+    
+install Bourbon Neat
+    
+    neat install
+    
+Go back to project root
+    
+    cd ..
+    
+Install project dependancies with Bower
+
+    bower install
+    
+Create a webserver with powder using pow to host project files located at myapp.dev
+
+    powder link
+    
+Run guard to compile sass, concat js and livereload the browser when changes are made to any file
+
+    guard
 
 ## The even _easier_ setup
 
 ##### Just copy and paste this into your shell
 
-	echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && open http://$NAME.dev && guard
+    echo What is the name of your project? ; read NAME ; git clone https://github.com/joshfry/point-guard.git && mv point-guard $NAME && cd $NAME && bundle install && cd scss && bourbon install && neat install && cd .. && bower install && powder link && open http://$NAME.dev && guard
 
 ## Bower
 
-Bower packages are pulled into the `/js/components/` directory using the `.bowerrc` file.
+Bower packages are installed in the `/js/components/` directory. The configuration is handled with the `.bowerrc` file.
 
 To add a new package
 
-	bower install <name-of-package> --save
+    bower install <name-of-package> --save
 
 To uninstall a package
 
-	bower uninstall <name-of-package> --save
+    bower uninstall <name-of-package> --save
 
 ## Guard Concat
 
